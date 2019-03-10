@@ -125,7 +125,7 @@ footer {
     padding-bottom: 3em;
     padding-top: 1em;
     text-align: center;
-    background-color: green;
+    background-color: #002c58;
 }
 
 .form {
@@ -134,4 +134,12 @@ footer {
 
 .input-wrapper {
     margin-bottom: 0.7em;
+}
+
+.copy-right {
+    font-size: 8px;
+}
+
+.form-submit {
+    color: white;
 }
