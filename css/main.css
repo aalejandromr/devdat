@@ -1,5 +1,6 @@
 body {
     background-color: rgb(29, 72, 124);
+    color: white;
 }
 
 ul {
@@ -13,7 +14,6 @@ ul {
     left: 0;
     background: #fff;
     width: 100%;
-    
     border-radius: 0 0 5px 5px;
     box-shadow: 0 0 8px 2px #000;
 }
@@ -67,4 +67,32 @@ ul {
     bottom: 0;
     right: 0;
     left: 0;
+}
+
+.center {
+    text-align: center;
+}
+
+.main-header {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 11.5em;
+}
+
+.content-spacing {
+    margin: 5em;
+}
+
+.intern-spacing {
+    margin-top: 3em;
+}
+
+hr {
+    width: 23%;
+    background-color: rgb(44, 170, 255);
+    height: 4px;
+    border-radius: 0px;
+    margin-top: 1.5em;
 }
