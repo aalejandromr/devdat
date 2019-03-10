@@ -29,16 +29,16 @@ ul {
 #access_nav {
     display: block;
     position: absolute;
-    top: 0;
-    right: 0;
+    top: 1em;
+    right: 1em;
     width: 40px;
     height: 0;
     padding-top: 40px;
     overflow: hidden;
-    background: rgb(29, 72, 124) 10px 10px / 20px 20px no-repeat;
-
+    background: rgb(29, 72, 124) 10px 10px / 16px 17px no-repeat;
     background-image: -webkit-repeating-linear-gradient(#fff, #fff 2px, rgb(29, 72, 124) 2px, rgb(29, 72, 124) 33.3333%);
-    background-image: repeating-linear-gradient(#fff, #fff 2px, rgb(29, 72, 124) 2px, rgb(29, 72, 124) 33.3333%);
+    background-image: repeating-linear-gradient(#fff, #fff 2px, rgb(29, 72, 124) 0px, rgb(29, 72, 124) 37%);
+    /* border-radius: 45px !important; */
     z-index: 1;
 }
 
@@ -47,13 +47,18 @@ ul {
 }
 
 .main-background {
-    width: 100%;
+    width: 110%;
+    height: 236px;
     min-height: 10em;
-    background-image: url('/Library/WebServer/Documents/devdat-webpage/assets/background/devdat-background.png');
-    -webkit-background-size: contain;
-    -moz-background-size: contain;
-    -o-background-size: contain;
-    background-size: contain;
+    position: relative;
+    top: -50px;
+    right: 42px;
+    background-image: url(../assets/background/devdat-background.png);
+    -webkit-background-size: 100% 131%;
+    -moz-background-size: 100% 131%;
+    -o-background-size: 100% 131%;
+    background-repeat: no-repeat;
+    background-size: 100% 131%;
 }
 
 .burger-menu {
@@ -82,7 +87,7 @@ ul {
 }
 
 .content-spacing {
-    margin: 5em;
+    margin: 0em 5em 5em 5em;
 }
 
 .intern-spacing {
