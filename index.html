@@ -39,7 +39,7 @@
 
     <div class="row logo">
         <a href="#">
-                <img src="/Library/WebServer/Documents/devdat-webpage/assets/logo/logo-devdat.svg" alt="DEVDAT, We Develop that">
+                <img src="assets/logo/logo-devdat.svg" alt="DEVDAT, We Develop that">
             </a>
         </div>
 
@@ -84,50 +84,68 @@
         </div>
 
         <div class="row content-spacing">
-            <div class="services">
+            <div class="services flex items-stretch">
                 <div class="s6">
                     <img src="" alt="Web Design">
                     <h5> WEB DESIGN </h5>
                     <hr/>
+                    <ul>
+                        <li> Wordpress </li>
+                        <li> Sass </li>
+                        <li> Less </li>
+                        <li> CSS </li>
+                        <li> Javascript </li>
+                    </ul>
                 </div>
                 <div class="s6">
                     <img src="" alt="Web Applications">
                     <h5> WEB APPLICATIONS </h5>
                     <hr/>
+                    <ul>
+                        <li> ReactJS </li>
+                        <li> AngularJS </li>
+                        <li> Ruby </li>
+                        <li> Ruby on Rails </li>
+                        <li> WebRTC </li>
+                    </ul>
                 </div>
             </div>
         </div>
 
-        <div class="row get-to-know-us content-spacing">
+        <div class="row get-to-know-us content-spacing ">
             <div class="get-to-know-us-header">
                 <h2> Get to know us </h2>
             </div>
             <hr/>
             <div class="get-to-know-us-info intern-spacing">
-                <p> Here is our team! </p>
+                <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod 
+                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, 
+                </p>
             </div>
-            <div class="s6">
-                <div class="team">
-                    <img src="" alt="Jose A Mejia">
-                    <div class="team-header">
-                        <h4> ALEJANDRO MEJIA </h4>
-                    </div>
-                    <hr/>
-                    <div class="team-position">
-                        <p> Web Developer </p>
+            <div class="flex items-stretch">
+                <div class="s6">
+                    <div class="team">
+                        <img src="" alt="Jose A Mejia">
+                        <div class="team-header">
+                            <h4> ALEJANDRO MEJIA </h4>
+                        </div>
+                        <hr/>
+                        <div class="team-position">
+                            <p> Web Developer </p>
+                        </div>
                     </div>
                 </div>
-            </div>
-
-            <div class="s6">
-                <div class="team">
-                    <img src="" alt="Eduardo Mejia">
-                    <div class="team-header">
-                        <h4> Eduardo Mejia </h4>
-                    </div>
-                    <hr/>
-                    <div class="team-position">
-                        <p> WebRTC and VoIP Developer </p>
+    
+                <div class="s6">
+                    <div class="team">
+                        <img src="" alt="Eduardo Mejia">
+                        <div class="team-header">
+                            <h4> Eduardo Mejia </h4>
+                        </div>
+                        <hr/>
+                        <div class="team-position">
+                            <p> WebRTC and VoIP Developer </p>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -145,14 +163,29 @@
             </div>
             <div class="form">
                 <form action="">
-                    <label for="name"> </label>
-                    <input name="name" type="text" placeholder="Your name">
-                    <label for="telephone"></label>
-                    <input name="telephone" type="text" placeholder="phone">
-                    <label for="email"></label>
-                    <input type="text" name="email">
-                    <label for="project"></label>
-                    <textarea name="project" id="project" cols="30" rows="10"></textarea>
+                    <div class="flex flex-col input-wrapper">
+                        <label for="name"> </label>
+                        <input name="name" type="text" placeholder="Your name">
+                    </div>
+
+                    <div class="flex flex-col input-wrapper">
+                        <label for="telephone"></label>
+                        <input name="telephone" type="text" placeholder="phone">
+                        
+                    </div>
+                    <div class="flex flex-col input-wrapper">
+                        <label for="email"></label>
+                        <input type="text" name="email" placeholder="email">
+                    </div>
+                    <div class="flex flex-col input-wrapper">
+                        <label for="project"></label>
+                        <textarea name="project" id="project" cols="30" rows="10"></textarea>    
+                    </div>
+
+                    <div class="flex flex-row-reverse">
+                        <button> SEND </button>
+                    </div>
+                    
                 </form>
             </div>
         </div>

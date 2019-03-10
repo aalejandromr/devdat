@@ -1,3 +1,21 @@
+@font-face {
+    font-family: "quantify";
+    src: url("../assets/tipografias/quantify/Quantify\ Bold\ v2.6.ttf");
+}
+
+@font-face {
+    font-family: 'Monserrat';
+    src: url("../assets/tipografias/Montserrat/Montserrat-Regular.ttf");
+}
+
+* {
+    font-family: 'Monserrat';
+}
+
+h1, h2 {
+    font-family: 'quantify';
+}
+
 body {
     background-color: rgb(29, 72, 124);
     color: white;
@@ -68,7 +86,7 @@ ul {
 
 .logo {
     position: absolute;
-    top: 0;
+    top: 0px;
     bottom: 0;
     right: 0;
     left: 0;
@@ -100,4 +118,20 @@ hr {
     height: 4px;
     border-radius: 0px;
     margin-top: 1.5em;
+}
+
+footer {
+    height: 100%;
+    padding-bottom: 3em;
+    padding-top: 1em;
+    text-align: center;
+    background-color: green;
+}
+
+.form {
+    padding: 12%;
+}
+
+.input-wrapper {
+    margin-bottom: 0.7em;
 }
