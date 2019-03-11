@@ -143,3 +143,24 @@ footer {
 .form-submit {
     color: white;
 }
+
+form * {
+    padding: 0.4em;
+    background-color: #002c58;
+    color: white;
+}
+
+.form-submit {
+    color: #002c58;
+    background-color: white;
+    font-weight: bolder;
+    padding: 0.7em 2em 0.7em 2em;
+}
+
+.input-wrapper input, .input-wrapper textarea {
+    border: 1.5px solid #fff;
+}
+
+::-webkit-input-placeholder { /* WebKit browsers */
+     opacity: 0.9 !important;
+}
