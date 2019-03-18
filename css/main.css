@@ -97,7 +97,7 @@ ul {
 }
 
 .content-spacing {
-    margin: 0em 5em 5em 5em;
+    margin: 4em;
 }
 
 .intern-spacing {
@@ -167,7 +167,7 @@ h3 {
     top: 3em;
     bottom: 0;
     right: 0em;
-    left: 6em;
+    left: 4.9em;
 }
 
 .logo img {
@@ -183,7 +183,7 @@ h3 {
 }
 
 .web-applications {
-    margin: 0em 0.5em 0em 2em;
+    margin: -0.5em 0.5em 0em 1em;
 }
 
 .team-photo-wrapper {
