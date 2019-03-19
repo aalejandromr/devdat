@@ -219,6 +219,72 @@ ul {
 
 
 @media only screen and (max-width: 600px) {
+    @font-face {
+        font-family: "quantify";
+        src: url("../assets/tipografias/quantify/Quantify\ Bold\ v2.6.ttf");
+    }
+    
+    @font-face {
+        font-family: 'Monserrat';
+        src: url("../assets/tipografias/Montserrat/Montserrat-Regular.ttf");
+    }
+    
+    * {
+        font-family: 'Monserrat';
+    }
+    
+    h1, h2 {
+        font-family: 'quantify';
+    }
+    
+    body {
+        background-color: rgb(29, 72, 124);
+        color: white;
+    }
+    
+    ul {
+        padding: 0px;
+    }
+    
+    #main_nav {
+        display: none;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background: #fff;
+        width: 100%;
+        border-radius: 0 0 5px 5px;
+        box-shadow: 0 0 8px 2px #000;
+    }
+    
+    .with_nav #main_nav {
+        display: block;
+    }
+    
+    .access_aid {
+        display: none;
+    }
+    
+    #access_nav {
+        display: block;
+        position: absolute;
+        top: 1em;
+        right: 1em;
+        width: 40px;
+        height: 0;
+        padding-top: 40px;
+        overflow: hidden;
+        background: rgb(29, 72, 124) 10px 10px / 16px 17px no-repeat;
+        background-image: -webkit-repeating-linear-gradient(#fff, #fff 2px, rgb(29, 72, 124) 2px, rgb(29, 72, 124) 33.3333%);
+        background-image: repeating-linear-gradient(#fff, #fff 2px, rgb(29, 72, 124) 0px, rgb(29, 72, 124) 37%);
+        /* border-radius: 45px !important; */
+        z-index: 1;
+    }
+    
+    .with_nav #access_nav {
+        background-image: linear-gradient(45deg, transparent 13px, #ccc 13px, #ccc 15px, transparent 0), linear-gradient(-45deg, white 13px, #ccc 13px, #ccc 15px, white 0);
+    }
+    
     .main-background {
         width: 110%;
         height: 236px;
@@ -233,12 +299,15 @@ ul {
         background-repeat: no-repeat;
         background-size: 100% 131%;
     }
-
+    
     .burger-menu {
         margin-top: 10em;
         margin-bottom: 10em;
     }
     
+    .center {
+        text-align: center;
+    }
     
     .main-header {
         position: absolute;
