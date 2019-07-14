@@ -83,7 +83,7 @@
         </div>
 
         <div class="row content-spacing">
-            <div class="services flex items-stretch">
+            <div class="services flex items-center">
                 <div class="s6 web-design">
                     <img class="services-img" src="./assets/icons/WEB_DESIGN_PNG.png" alt="Web Design">
                     <h5> WEB DESIGN </h5>
@@ -96,7 +96,7 @@
                         <li> Javascript </li>
                     </ul>
                 </div>
-                <div class="s6 web-applications">
+                <div class="s6 web-applications flex flex-col items-center">
                     <img class="services-img" src="./assets/icons/WEB_APPLICATIONS_PNG.png" alt="Web Applications">
                     <h5> WEB APPLICATIONS </h5>
                     <hr/>
@@ -121,9 +121,9 @@
                         tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, 
                 </p>
             </div>
-            <div class="flex items-stretch team-photo-wrapper">
-                <div class="s6 team-margin">
-                    <div class="team">
+            <div class="flex team-photo-wrapper">
+                <div class="flex items-center s6 team-margin">
+                    <div class="team flex flex-col ">
                         <img src="./assets/pictures/ALE_PHOTO.png" alt="Jose A Mejia">
                         <div class="team-header">
                             <h4> Jose A Mejia </h4>
@@ -135,8 +135,8 @@
                     </div>
                 </div>
     
-                <div class="s6">
-                    <div class="team">
+                <div class=" s6">
+                    <div class="team flex flex-col items-center">
                         <img src="./assets/pictures/EDU_PHOTO.png" alt="Eduardo Mejia">
                         <div class="team-header">
                             <h4> Eduardo Mejia </h4>
