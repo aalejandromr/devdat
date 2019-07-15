@@ -125,10 +125,10 @@
 
                     <hr />
                     <ul>
-                        <li>Wordpress</li>
+                        <li>CSS</li>
                         <li>Sass</li>
                         <li>Less</li>
-                        <li>CSS</li>
+                        <li>Wordpress</li>
                         <li>Javascript</li>
                     </ul>
                 </div>
@@ -145,11 +145,11 @@
 
                     <hr />
                     <ul>
-                        <li>ReactJS</li>
-                        <li>AngularJS</li>
                         <li>Ruby</li>
-                        <li>Ruby on Rails</li>
                         <li>WebRTC</li>
+                        <li>Ruby on Rails</li>
+                        <li>Flux Arquitecture</li>
+                        <li>Reactive JS Frameworks</li>
                     </ul>
                 </div>
             </div>
