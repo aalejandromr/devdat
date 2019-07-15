@@ -1,36 +1,421 @@
 @font-face {
-    font-family: "quantify";
-    src: url("../assets/tipografias/quantify/Quantify\ Bold\ v2.6.ttf");
+  font-family: "quantify";
+  src: url("../assets/tipografias/quantify/Quantify\ Bold\ v2.6.ttf");
 }
 
 @font-face {
-    font-family: 'Monserrat';
-    src: url("../assets/tipografias/Montserrat/Montserrat-Regular.ttf");
+  font-family: "Monserrat";
+  src: url("../assets/tipografias/Montserrat/Montserrat-Regular.ttf");
 }
 
 * {
-    font-family: 'Monserrat';
+  font-family: "Monserrat";
 }
 
-h1, h2 {
-    font-family: 'quantify';
+h1,
+h2 {
+  font-family: "quantify";
 }
 
 body {
-    background-color: rgb(29, 72, 124);
-    color: white;
+  background-color: rgb(29, 72, 124);
+  color: white;
 }
 
 ul {
-    padding: 0px;
+  padding: 0px;
 }
 
-
 .center {
-    text-align: center;
+  text-align: center;
 }
 
 #main_nav {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: #fff;
+  width: 100%;
+  border-radius: 0 0 5px 5px;
+  box-shadow: 0 0 8px 2px #000;
+}
+
+.with_nav #main_nav {
+  display: block;
+}
+
+.access_aid {
+  display: none;
+}
+
+#access_nav {
+  display: block;
+  position: absolute;
+  top: 1em;
+  right: 1em;
+  width: 40px;
+  height: 0;
+  padding-top: 40px;
+  overflow: hidden;
+  background: rgb(29, 72, 124) 10px 10px / 16px 17px no-repeat;
+  background-image: -webkit-repeating-linear-gradient(
+    #fff,
+    #fff 2px,
+    rgb(29, 72, 124) 2px,
+    rgb(29, 72, 124) 33.3333%
+  );
+  background-image: repeating-linear-gradient(
+    #fff,
+    #fff 2px,
+    rgb(29, 72, 124) 0px,
+    rgb(29, 72, 124) 37%
+  );
+  /* border-radius: 45px !important; */
+  z-index: 1;
+}
+
+.with_nav #access_nav {
+  background-image: linear-gradient(
+      45deg,
+      transparent 13px,
+      #ccc 13px,
+      #ccc 15px,
+      transparent 0
+    ),
+    linear-gradient(-45deg, white 13px, #ccc 13px, #ccc 15px, white 0);
+}
+
+@media only screen and (min-width: 1501px) {
+    .main-background {
+      width: 102%;
+      height: 43em;
+      min-height: 10em;
+      position: relative;
+      top: 0px;
+      right: 2em;
+      background-image: url(../assets/background/devdat-background.png);
+      -webkit-background-size: 100% 131%;
+      -moz-background-size: 100% 131%;
+      -o-background-size: 100% 131%;
+      background-repeat: no-repeat;
+      background-size: 100% 131%;
+    }
+  
+    .site-eslogan {
+      font-size: 5rem;
+    }
+  
+    .main-header {
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      top: 19.5em;
+    }
+  
+    h3 {
+      color: #2caaff;
+      font-size: 0.7em;
+    }
+  
+    .logo {
+      position: absolute;
+      top: 2em;
+      bottom: 0;
+      right: 0em;
+      left: 2.9em;
+    }
+  
+    .logo img {
+      width: 12em !important;
+    }
+  
+    .content-spacing {
+      margin: 10em;
+    }
+  
+    .intern-spacing {
+      margin-top: 5em;
+    }
+  
+    hr {
+      width: 23%;
+      background-color: rgb(44, 170, 255);
+      height: 4px;
+      border-radius: 0px;
+      margin-top: 1.5em;
+    }
+  
+    footer {
+      height: 100%;
+      padding-bottom: 3em;
+      padding-top: 1em;
+      text-align: center;
+      background-color: #002c58;
+    }
+  
+    .form {
+      padding: 5em 16em 5em 16em;
+    }
+  
+    .input-wrapper {
+      margin-bottom: 0.7em;
+    }
+  
+    .copy-right {
+      font-size: 8px;
+    }
+  
+    .form-submit {
+      color: white;
+    }
+  
+    form * {
+      padding: 0.4em;
+      background-color: #002c58;
+      color: white;
+    }
+  
+    .form-submit {
+      color: #002c58;
+      background-color: white;
+      font-weight: bolder;
+      padding: 0.7em 2em 0.7em 2em;
+    }
+  
+    .input-wrapper input,
+    .input-wrapper textarea {
+      border: 1.5px solid #fff;
+    }
+  
+    ::-webkit-input-placeholder {
+      /* WebKit browsers */
+      opacity: 0.9 !important;
+    }
+  
+    .services-img {
+      max-width: 8em;
+    }
+  
+    .web-design {
+      margin: 0em 7em 0em 13em;
+    }
+  
+    .web-applications {
+      margin: -0.5em 0.5em 0em 7em;
+    }
+  
+    .team-photo-wrapper {
+      margin-top: 5em;
+    }
+  
+    .team-photo-wrapper img {
+      max-width: 9em;
+      border: 4px solid #00ACFF;
+      border-radius: 500px;
+      -moz-border-radius: 500px;
+    }
+  
+    ul {
+      list-style: none;
+    }
+  
+    li::before {
+      content: "•";
+      color: rgb(44, 170, 255);
+    }
+  
+    .contact .intern-spacing {
+      margin-left: 1.5em;
+      margin-right: 1.5em;
+    }
+  
+    .team-margin {
+      margin: 0em 8em 0em 13em;
+    }
+  }
+
+@media only screen and (min-width: 600px) and (max-width: 1500px) {
+  .main-background {
+    width: 102%;
+    height: 43em;
+    min-height: 10em;
+    position: relative;
+    top: 0px;
+    right: 2em;
+    background-image: url(../assets/background/devdat-background.png);
+    -webkit-background-size: 100% 131%;
+    -moz-background-size: 100% 131%;
+    -o-background-size: 100% 131%;
+    background-repeat: no-repeat;
+    background-size: 100% 131%;
+  }
+
+  .site-eslogan {
+    font-size: 5rem;
+  }
+
+  .main-header {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 19.5em;
+  }
+
+  h3 {
+    color: #2caaff;
+    font-size: 0.7em;
+  }
+
+  .logo {
+    position: absolute;
+    top: 2em;
+    bottom: 0;
+    right: 0em;
+    left: 2.9em;
+  }
+
+  .logo img {
+    width: 12em !important;
+  }
+
+  .content-spacing {
+    margin: 10em;
+  }
+
+  .intern-spacing {
+    margin-top: 5em;
+  }
+
+  hr {
+    width: 23%;
+    background-color: rgb(44, 170, 255);
+    height: 4px;
+    border-radius: 0px;
+    margin-top: 1.5em;
+  }
+
+  footer {
+    height: 100%;
+    padding-bottom: 3em;
+    padding-top: 1em;
+    text-align: center;
+    background-color: #002c58;
+  }
+
+  .form {
+    padding: 5em 16em 5em 16em;
+  }
+
+  .input-wrapper {
+    margin-bottom: 0.7em;
+  }
+
+  .copy-right {
+    font-size: 8px;
+  }
+
+  .form-submit {
+    color: white;
+  }
+
+  form * {
+    padding: 0.4em;
+    background-color: #002c58;
+    color: white;
+  }
+
+  .form-submit {
+    color: #002c58;
+    background-color: white;
+    font-weight: bolder;
+    padding: 0.7em 2em 0.7em 2em;
+  }
+
+  .input-wrapper input,
+  .input-wrapper textarea {
+    border: 1.5px solid #fff;
+  }
+
+  ::-webkit-input-placeholder {
+    /* WebKit browsers */
+    opacity: 0.9 !important;
+  }
+
+  .services-img {
+    max-width: 8em;
+  }
+
+  .web-design {
+    margin: 0em 7em 0em 13em;
+  }
+
+  .web-applications {
+    margin: -0.5em 0.5em 0em 7em;
+  }
+
+  .team-photo-wrapper {
+    margin-top: 5em;
+  }
+
+  .team-photo-wrapper img {
+    max-width: 9em;
+    border: 4px solid #00ACFF;
+    border-radius: 500px;
+    -moz-border-radius: 500px;
+  }
+
+  ul {
+    list-style: none;
+  }
+
+  li::before {
+    content: "•";
+    color: rgb(44, 170, 255);
+  }
+
+  .contact .intern-spacing {
+    margin-left: 1.5em;
+    margin-right: 1.5em;
+  }
+
+  .team-margin {
+    margin: 0em 8em 0em 13em;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  @font-face {
+    font-family: "quantify";
+    src: url("../assets/tipografias/quantify/Quantify\ Bold\ v2.6.ttf");
+  }
+
+  @font-face {
+    font-family: "Monserrat";
+    src: url("../assets/tipografias/Montserrat/Montserrat-Regular.ttf");
+  }
+
+  * {
+    font-family: "Monserrat";
+  }
+
+  h1,
+  h2 {
+    font-family: "quantify";
+  }
+
+  body {
+    background-color: rgb(29, 72, 124);
+    color: white;
+  }
+
+  ul {
+    padding: 0px;
+  }
+
+  #main_nav {
     display: none;
     position: absolute;
     top: 0;
@@ -39,17 +424,17 @@ ul {
     width: 100%;
     border-radius: 0 0 5px 5px;
     box-shadow: 0 0 8px 2px #000;
-}
+  }
 
-.with_nav #main_nav {
+  .with_nav #main_nav {
     display: block;
-}
+  }
 
-.access_aid {
+  .access_aid {
     display: none;
-}
+  }
 
-#access_nav {
+  #access_nav {
     display: block;
     position: absolute;
     top: 1em;
@@ -59,375 +444,196 @@ ul {
     padding-top: 40px;
     overflow: hidden;
     background: rgb(29, 72, 124) 10px 10px / 16px 17px no-repeat;
-    background-image: -webkit-repeating-linear-gradient(#fff, #fff 2px, rgb(29, 72, 124) 2px, rgb(29, 72, 124) 33.3333%);
-    background-image: repeating-linear-gradient(#fff, #fff 2px, rgb(29, 72, 124) 0px, rgb(29, 72, 124) 37%);
+    background-image: -webkit-repeating-linear-gradient(
+      #fff,
+      #fff 2px,
+      rgb(29, 72, 124) 2px,
+      rgb(29, 72, 124) 33.3333%
+    );
+    background-image: repeating-linear-gradient(
+      #fff,
+      #fff 2px,
+      rgb(29, 72, 124) 0px,
+      rgb(29, 72, 124) 37%
+    );
     /* border-radius: 45px !important; */
     z-index: 1;
-}
-
-.with_nav #access_nav {
-    background-image: linear-gradient(45deg, transparent 13px, #ccc 13px, #ccc 15px, transparent 0), linear-gradient(-45deg, white 13px, #ccc 13px, #ccc 15px, white 0);
-}
-
-@media only screen and (min-width: 600px) and (max-width: 1500px){ 
-    .main-background {
-        width: 102%;
-        height: 43em;
-        min-height: 10em;
-        position: relative;
-        top: 0px;
-        right: 2em;
-        background-image: url(../assets/background/devdat-background.png);
-        -webkit-background-size: 100% 131%;
-        -moz-background-size: 100% 131%;
-        -o-background-size: 100% 131%;
-        background-repeat: no-repeat;
-        background-size: 100% 131%;
-    }
-    
-    
-    .site-eslogan {
-        font-size: 5rem;
-    }
-    
-    .main-header {
-        position: absolute;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        top: 19.5em;
-    }
-    
-    h3 {
-        color: #2CAAFF;
-        font-size: 0.7em;
-    }
-    
-    .logo {
-        position: absolute;
-        top: 2em;
-        bottom: 0;
-        right: 0em;
-        left: 2.9em;
-    }
-    
-    .logo img {
-        width: 12em !important;
-    }
-    
-    .content-spacing {
-        margin: 10em;
-    }
-    
-    .intern-spacing {
-        margin-top: 5em;
-    }
-    
-    hr {
-        width: 23%;
-        background-color: rgb(44, 170, 255);
-        height: 4px;
-        border-radius: 0px;
-        margin-top: 1.5em;
-    }
-    
-    footer {
-        height: 100%;
-        padding-bottom: 3em;
-        padding-top: 1em;
-        text-align: center;
-        background-color: #002c58;
-    }
-    
-    .form {
-        padding: 5em 16em 5em 16em;
-    }
-    
-    .input-wrapper {
-        margin-bottom: 0.7em;
-    }
-    
-    .copy-right {
-        font-size: 8px;
-    }
-    
-    .form-submit {
-        color: white;
-    }
-    
-    form * {
-        padding: 0.4em;
-        background-color: #002c58;
-        color: white;
-    }
-    
-    .form-submit {
-        color: #002c58;
-        background-color: white;
-        font-weight: bolder;
-        padding: 0.7em 2em 0.7em 2em;
-    }
-    
-    .input-wrapper input, .input-wrapper textarea {
-        border: 1.5px solid #fff;
-    }
-    
-    ::-webkit-input-placeholder { /* WebKit browsers */
-         opacity: 0.9 !important;
-    }
-    
-    .services-img {
-        max-width: 8em;
-    }
-    
-    .web-design {
-        margin: 0em 7em 0em 13em;
-    }
-    
-    .web-applications {
-        margin: -0.5em 0.5em 0em 7em;
-    }
-    
-    .team-photo-wrapper {
-        margin-top: 5em;
-    }
-    
-    .team-photo-wrapper img {
-        max-width: 9em;
-        border: 2px solid white;
-        border-radius: 500px;
-        -moz-border-radius: 500px;
-    }
-    
-    ul {list-style: none}
-    
-    li::before {
-        content: "•"; 
-        color: rgb(44, 170, 255)
-    }
-    
-    .contact .intern-spacing{
-        margin-left: 1.5em;
-        margin-right: 1.5em;
-    }
-    
-    .team-margin {
-        margin: 0em 8em 0em 13em;
-    }
-    
-}
-
-
-@media only screen and (max-width: 600px) {
-    @font-face {
-        font-family: "quantify";
-        src: url("../assets/tipografias/quantify/Quantify\ Bold\ v2.6.ttf");
-    }
-    
-    @font-face {
-        font-family: 'Monserrat';
-        src: url("../assets/tipografias/Montserrat/Montserrat-Regular.ttf");
-    }
-    
-    * {
-        font-family: 'Monserrat';
-    }
-    
-    h1, h2 {
-        font-family: 'quantify';
-    }
-    
-    body {
-        background-color: rgb(29, 72, 124);
-        color: white;
-    }
-    
-    ul {
-        padding: 0px;
-    }
-    
-    #main_nav {
-        display: none;
-        position: absolute;
-        top: 0;
-        left: 0;
-        background: #fff;
-        width: 100%;
-        border-radius: 0 0 5px 5px;
-        box-shadow: 0 0 8px 2px #000;
-    }
-    
-    .with_nav #main_nav {
-        display: block;
-    }
-    
-    .access_aid {
-        display: none;
-    }
-    
-    #access_nav {
-        display: block;
-        position: absolute;
-        top: 1em;
-        right: 1em;
-        width: 40px;
-        height: 0;
-        padding-top: 40px;
-        overflow: hidden;
-        background: rgb(29, 72, 124) 10px 10px / 16px 17px no-repeat;
-        background-image: -webkit-repeating-linear-gradient(#fff, #fff 2px, rgb(29, 72, 124) 2px, rgb(29, 72, 124) 33.3333%);
-        background-image: repeating-linear-gradient(#fff, #fff 2px, rgb(29, 72, 124) 0px, rgb(29, 72, 124) 37%);
-        /* border-radius: 45px !important; */
-        z-index: 1;
-    }
-    
-    .with_nav #access_nav {
-        background-image: linear-gradient(45deg, transparent 13px, #ccc 13px, #ccc 15px, transparent 0), linear-gradient(-45deg, white 13px, #ccc 13px, #ccc 15px, white 0);
-    }
-    
-    .main-background {
-        width: 110%;
-        height: 236px;
-        min-height: 10em;
-        position: relative;
-        top: -50px;
-        right: 42px;
-        background-image: url(../assets/background/devdat-background.png);
-        -webkit-background-size: 100% 131%;
-        -moz-background-size: 100% 131%;
-        -o-background-size: 100% 131%;
-        background-repeat: no-repeat;
-        background-size: 100% 131%;
-    }
-    
-    .burger-menu {
-        margin-top: 10em;
-        margin-bottom: 10em;
-    }
-    
-    .center {
-        text-align: center;
-    }
-    
-    .main-header {
-        position: absolute;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        top: 11.5em;
-    }
-    
-    .content-spacing {
-        margin: 4em;
-    }
-    
-    .intern-spacing {
-        margin-top: 3em;
-    }
-    
-    hr {
-        width: 23%;
-        background-color: rgb(44, 170, 255);
-        height: 4px;
-        border-radius: 0px;
-        margin-top: 1.5em;
-    }
-    
-    footer {
-        height: 100%;
-        padding-bottom: 3em;
-        padding-top: 1em;
-        text-align: center;
-        background-color: #002c58;
-    }
-    
-    .form {
-        padding: 12%;
-    }
-    
-    .input-wrapper {
-        margin-bottom: 0.7em;
-    }
-    
-    .copy-right {
-        font-size: 8px;
-    }
-    
-    .form-submit {
-        color: white;
-    }
-    
-    form * {
-        padding: 0.4em;
-        background-color: #002c58;
-        color: white;
-    }
-    
-    .form-submit {
-        color: #002c58;
-        background-color: white;
-        font-weight: bolder;
-        padding: 0.7em 2em 0.7em 2em;
-    }
-    
-    .input-wrapper input, .input-wrapper textarea {
-        border: 1.5px solid #fff;
-    }
-    
-    ::-webkit-input-placeholder { /* WebKit browsers */
-         opacity: 0.9 !important;
-    }
-    
-    h3 {
-        color: #2CAAFF;
-        font-size: 0.7em;
-    }
-    
-    .logo {
-        position: absolute;
-        top: 3em;
-        bottom: 0;
-        right: 0em;
-        left: 4.9em;
-    }
-    
-    .logo img {
-        width: 13em !important;
-    }
-    
-    .services-img {
-        max-width: 6em;
-    }
-    
-    .web-design {
-        margin: 0.5em;
-    }
-    
-    .web-applications {
-        margin: -0.5em 0.5em 0em 1em;
-    }
-    
-    .team-photo-wrapper {
-        margin-top: 5em;
-    }
-    
-    .team-photo-wrapper img {
-        max-width: 7em;
-        border: 2px solid white;
-        border-radius: 500px;
-        -moz-border-radius: 500px;
-    }
-    
-    ul {list-style: none}
-    
-    li::before {
-        content: "•"; 
-        color: rgb(44, 170, 255)
-    }
-    
-    .contact .intern-spacing{
-        margin-left: 1.5em;
-        margin-right: 1.5em;
-    }
   }
 
+  .with_nav #access_nav {
+    background-image: linear-gradient(
+        45deg,
+        transparent 13px,
+        #ccc 13px,
+        #ccc 15px,
+        transparent 0
+      ),
+      linear-gradient(-45deg, white 13px, #ccc 13px, #ccc 15px, white 0);
+  }
+
+  .main-background {
+    width: 110%;
+    height: 236px;
+    min-height: 10em;
+    position: relative;
+    top: -50px;
+    right: 42px;
+    background-image: url(../assets/background/devdat-background.png);
+    -webkit-background-size: 100% 131%;
+    -moz-background-size: 100% 131%;
+    -o-background-size: 100% 131%;
+    background-repeat: no-repeat;
+    background-size: 100% 131%;
+  }
+
+  .burger-menu {
+    margin-top: 10em;
+    margin-bottom: 10em;
+  }
+
+  .center {
+    text-align: center;
+  }
+
+  .main-header {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 11.5em;
+  }
+
+  .content-spacing {
+    margin: 4em;
+  }
+
+  .intern-spacing {
+    margin-top: 3em;
+  }
+
+  hr {
+    width: 23%;
+    background-color: rgb(44, 170, 255);
+    height: 4px;
+    border-radius: 0px;
+    margin-top: 1.5em;
+  }
+
+  footer {
+    height: 100%;
+    padding-bottom: 3em;
+    padding-top: 1em;
+    text-align: center;
+    background-color: #002c58;
+  }
+
+  .form {
+    padding: 12%;
+  }
+
+  .input-wrapper {
+    margin-bottom: 0.7em;
+  }
+
+  .copy-right {
+    font-size: 8px;
+  }
+
+  .form-submit {
+    color: white;
+  }
+
+  form * {
+    padding: 0.4em;
+    background-color: #002c58;
+    color: white;
+  }
+
+  .form-submit {
+    color: #002c58;
+    background-color: white;
+    font-weight: bolder;
+    padding: 0.7em 2em 0.7em 2em;
+  }
+
+  .input-wrapper input,
+  .input-wrapper textarea {
+    border: 1.5px solid #fff;
+  }
+
+  ::-webkit-input-placeholder {
+    /* WebKit browsers */
+    opacity: 0.9 !important;
+  }
+
+  h3 {
+    color: #2caaff;
+    font-size: 0.7em;
+  }
+
+  .logo {
+    position: absolute;
+    top: 3em;
+    bottom: 0;
+    right: 0em;
+    left: 6.5em;
+  }
+
+  .logo img {
+    width: 13em !important;
+  }
+
+  .services-img {
+    max-width: 6em;
+  }
+
+  .web-design {
+    margin: 0.5em;
+  }
+
+  .web-applications {
+    margin: -0.5em 0.5em 0em 1em;
+  }
+
+  .team-photo-wrapper {
+    margin-top: 5em;
+  }
+
+  .team-photo-wrapper img {
+    max-width: 7em;
+    border: 2px solid white;
+    border-radius: 500px;
+    -moz-border-radius: 500px;
+  }
+
+  ul {
+    list-style: none;
+  }
+
+  li::before {
+    content: "•";
+    color: rgb(44, 170, 255);
+  }
+
+  .contact .intern-spacing {
+    margin-left: 1.5em;
+    margin-right: 1.5em;
+  }
+}
+
+.team-photo-wrapper .flex {
+    background-color: white;
+    margin: 5%;
+    padding-top: 1%;
+}
+.services-wrapper .flex {
+    margin: 5%;
+    padding-top: 1%;
+}
+.team-photo-wrapper .flex .team-header {
+    color: #1D487C;
+}
+
+.card-text-base {
+    color: black;
+}
