@@ -170,7 +170,7 @@
             <div class="flex flex-wrap items-center justify-center team-photo-wrapper">
                 <div
                     class="sm:w-full md:w-full lg:w-1/2 xl:w-1/2 flex flex-col items-center max-w-sm rounded overflow-hidden shadow-lg">
-                    <img class="w-full" src="./assets/pictures/ALE_PHOTO.png" alt="Sunset in the mountains" />
+                    <img src="./assets/pictures/ALE_PHOTO.png" alt="Sunset in the mountains" />
                     <div class="px-6 py-4">
                         <div class="team-header font-bold">
                             <h4> Alejandro Mejia </h4>
@@ -189,7 +189,7 @@
 
                 <div
                     class="sm:w-full md:w-full lg:w-1/2 xl:w-1/2 max-w-sm flex flex-col items-center  rounded overflow-hidden shadow-lg">
-                    <img class="w-full" src="./assets/pictures/EDU_PHOTO.png" alt="Sunset in the mountains" />
+                    <img src="./assets/pictures/EDU_PHOTO.png" alt="Sunset in the mountains" />
                     <div class="px-6 py-4">
                         <div class="team-header font-bold">
                             <h4> Eduardo Mejia </h4>
